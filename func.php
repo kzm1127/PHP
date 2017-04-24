@@ -128,3 +128,12 @@ $array=["one","two","three","four","five","four"];
 print_r($array);
 $rever=array_reverse($array);
 print_r($rever);
+
+echo "---------PHP_shuffle()-----------".PHP_EOL;
+$array=["one","two","three","four","five","four"];
+print_r($array);
+shuffle($array);
+
+foreach($array as $value){
+  echo $value.PHP_EOL;
+}
