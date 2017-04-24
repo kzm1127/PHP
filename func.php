@@ -121,3 +121,10 @@ while(count($array) != 0){
   $e=array_pop($array);
   echo $e.PHP_EOL;
 }
+
+
+echo "---------PHP_array_revers()-----------".PHP_EOL;
+$array=["one","two","three","four","five","four"];
+print_r($array);
+$rever=array_reverse($array);
+print_r($rever);
