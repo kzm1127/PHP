@@ -1,11 +1,11 @@
 <?php
-$keyword = $_POST["keyword"];
+$keyword=$_GET["keyword"];
  ?>
 
  <!DOCTYPE html>
  <html lang="en">
    <head>
-     <meta charset="UTF-8">
+     <meta charset="utf-8">
      <title>IT CARET</title>
    </head>
    <body>
