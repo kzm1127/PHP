@@ -46,7 +46,7 @@ while($line=fgets($handle)){
 fclose($handle);
 for ($i=0; $i < count($date); $i++) {
     $sc=$date[$i];
-    if(22<=substr($sc,strpos($sc,",")+1,2)){
+    if(22==substr($sc,strpos($sc,",")+1,2)){
       echo $sc.PHP_EOL;
     }
 }
