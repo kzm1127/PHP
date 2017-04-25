@@ -1,5 +1,5 @@
 <?php
-$keyword=$_GET["keyword"];
+$keyword=$_POST["keyword"];
  ?>
 
  <!DOCTYPE html>
@@ -9,6 +9,6 @@ $keyword=$_GET["keyword"];
      <title>IT CARET</title>
    </head>
    <body>
-     Input keyword:<?php echo $keyword; ?>
+     Input keyword:<?php echo htmlspecialchars($keyword); ?>
    </body>
  </html>
