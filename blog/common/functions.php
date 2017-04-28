@@ -92,7 +92,13 @@ function save_article($new_article){
  * @param string $id 削除対象の記事ID
  */
 function delete_article($id){
-  // TODO
+  $article = file_get_contents(ARTICLE_FILE);
+  $article = json_decode($article,true);
+  unset($article[$id]);
+
+  $j_article=json_encode($article);
+  file_put_contents(ARTICLE_FILE, $j_article, LOCK_EX);
+
 }
 
 /**

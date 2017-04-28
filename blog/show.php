@@ -28,7 +28,7 @@ if (is_null($article)) {
     <hr>
     <h2><?= get_article($id)["title"] ?></h2>
     <h5>(<?= get_article($id)["date"] ?>) by <?= get_article($id)["author"] ?></h5>
-    <div> <?= nl2br(get_article($id)["body"]) ?> &nl2br </div>
+    <div> <?= nl2br(get_article($id)["body"]) ?> </div>
     <hr>
     <a href="index.php">BACK</a>
   </body>

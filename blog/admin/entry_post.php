@@ -9,6 +9,7 @@ if (is_null($userId)) {
 
 $title=$_POST["title"];
 $body=$_POST["body"];
+// $img=$_POST[""];
 
 if (is_null($title) || $title==''
   || mb_strlen($title, DEFAULT_ENCODE) > 40) {

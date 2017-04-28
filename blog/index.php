@@ -24,7 +24,7 @@ $articles=array_reverse($articles);
            </a>
          </li>
          <?php } ?>
-       }
+       
      </ul>
    </body>
  </html>

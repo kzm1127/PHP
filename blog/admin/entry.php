@@ -22,6 +22,7 @@ if (is_null($userId)) {
   <input type="text" name="title"><br>
   <label>BODY</label><br>
   <textarea name="body" rows="10" cols="30"></textarea><br>
+  <!-- <input type='file' class='file-selector'>upload</input><br> -->
   <input type="submit" name="name" value="post">
 </form>
      <hr>

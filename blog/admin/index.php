@@ -37,8 +37,8 @@ $articles=get_articles();
        <td><?= $article['date'] ?></td>
        <td><?= $article['title'] ?></td>
        <td><?= $article['author'] ?></td>
-       <td><a href="edit.php">EDIT</a></td>
-       <td><a href="delete">DELETE</a></td>
+       <td><a <a href="edit.php?id=<?= $article['id']?>">EDIT</a></td>
+       <td><a href="delete.php?id=<?= $article['id'] ?>">DELETE</a></td>
      </tr>
      <?php } ?>
     </table>
