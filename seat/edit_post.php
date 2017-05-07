@@ -33,7 +33,7 @@ for ($i=0; $i < count($sutudents); $i++) {
 }
 
 if($count>6){
-  header('location: http://localhost:8000/fronterror.php');
+  header('location: fronterror.php');
   die("");
 }
 
@@ -41,7 +41,7 @@ if($count>6){
 if ($count<=6) {
   $json=json_encode($sutudents);
   file_put_contents(JSON,$json,LOCK_EX);
-  header('location: http://localhost:8000/sutudentlist.php');
+  header('location: sutudentlist.php');
 }
 
 

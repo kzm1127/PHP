@@ -12,5 +12,5 @@ sort($sutudents);
 
 $json=json_encode($sutudents);
 file_put_contents(JSON,$json,LOCK_EX);
-header('location: http://localhost:8000/sutudentlist.php');
+header('location: sutudentlist.php');
 die("");

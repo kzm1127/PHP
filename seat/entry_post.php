@@ -25,7 +25,7 @@ $sutudents=json_decode($sutudents,true);
 $count=count($sutudents);
 
 if(29<=$count){
-  header('location: http://localhost:8000/fronterror.php');
+  header('location: fronterror.php');
   die("");
 }
 
@@ -44,10 +44,10 @@ for ($i=0; $i < count($sutudents); $i++) {
   }
 }
 if($count>6){
-  header('location: http://localhost:8000/fronterror.php');
+  header('location: fronterror.php');
   die("");
 }
 
 $json=json_encode($sutudents);
 file_put_contents(JSON,$json,LOCK_EX);
-header('location: http://localhost:8000/sutudentlist.php');
+header('location: sutudentlist.php');
