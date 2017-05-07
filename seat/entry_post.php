@@ -10,11 +10,11 @@ if (!isset($_POST["front"])) {
 $count=0;
 
 if ($name=="") {
-  header('location: http://localhost:8000/sutudentlist.php');
+  header('location: sutudentlist.php');
 }
 
 if ($com=="") {
-  header('location: http://localhost:8000/sutudentlist.php');
+  header('location: sutudentlist.php');
 }
 
 $sutudents=file_get_contents(JSON);

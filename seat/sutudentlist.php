@@ -71,7 +71,7 @@ for ($i=0; $i < count($sutudents); $i++) {
    <h2> 前席希望者数：<?= $frontcount ?> 人</h2>
    <h2><a href="entry.php">生徒新規登録</a> </h2>
    <h3><a href="dl.php">名簿ファイルダウンロード(JSON)</a></h3>
-   <h3><a href="http://localhost:8000/index.php">座席表に戻る</a></h3>
+   <h3><a href="index.php">座席表に戻る</a></h3>
 
    </body>
  </html>
