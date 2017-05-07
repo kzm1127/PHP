@@ -7,10 +7,6 @@ if (!isset($_POST["front"])) {
   $front=false;
 }else {$front=true;}
 $count=0;
-// var_dump($name);
-// var_dump($com);
-// var_dump($sid);
-// var_dump($front);
 
 $student=[];
 $student["id"]=$sid;
@@ -18,7 +14,6 @@ $student["name"]=$name;
 $student["com"]=$com;
 $student["front"]=$front;
 
-//var_dump($student);
 $sutudents=file_get_contents(JSON);
 $sutudents=json_decode($sutudents,true);
 
@@ -36,8 +31,6 @@ for ($i=0; $i < count($sutudents); $i++) {
     $count++;
   }
 }
-
-var_dump($count);
 
 if($count>6){
   header('location: http://localhost:8000/fronterror.php');

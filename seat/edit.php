@@ -8,10 +8,6 @@ foreach ($sutudents as $student) {
   if($student["id"]==$id){break;}
 }
 
-// var_dump($id);
-// var_dump($student);
-//
-// die("");
 
  ?>
 <!DOCTYPE html>

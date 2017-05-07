@@ -20,12 +20,10 @@ if ($com=="") {
 $sutudents=file_get_contents(JSON);
 $sutudents=json_decode($sutudents,true);
 
-print_r(count($sutudents));
 
 
 $count=count($sutudents);
-var_dump($count);
-//die("");
+
 if(29<=$count){
   header('location: http://localhost:8000/fronterror.php');
   die("");
@@ -53,8 +51,3 @@ if($count>6){
 $json=json_encode($sutudents);
 file_put_contents(JSON,$json,LOCK_EX);
 header('location: http://localhost:8000/sutudentlist.php');
-
-
-print_r($sutudents);
-
-die("");
