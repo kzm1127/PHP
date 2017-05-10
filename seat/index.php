@@ -7,14 +7,14 @@ require("funcs.php");
 
   for ($i=0; $i < 29; $i++) {
     if(isset($sutudents[$i])!=true){
-      $sutudents[$i]["id"]=$i;
-      $sutudents[$i]["name"]="empty";
-      $sutudents[$i]["com"]="empty";
-      $sutudents[$i]["front"]=false;
+      $sutudents[$i]["id"] = $i;
+      $sutudents[$i]["name"] = "empty";
+      $sutudents[$i]["com"] = "empty";
+      $sutudents[$i]["front"] = false;
     }
   }
 
-$i=0;
+$i = 0;
 
 ?>
 
